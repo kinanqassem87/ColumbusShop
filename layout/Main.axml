@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2">
+        <ImageView
+            android:src="@drawable/a12"
+            android:layout_width="match_parent"
+            android:layout_height="429.5dp"
+            android:id="@+id/imageHome"
+            android:layout_weight="1" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1">
+            <Button
+                android:text="About Us"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/btnAbout"
+                android:layout_weight="1" />
+            <Button
+                android:text="Show Product"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/btnShow"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adUnitId="@string/Banner_Ads"
+            ads:adSize="BANNER" />
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adUnitId="@string/Banner_Ads"
+            ads:adSize="BANNER" />
+    </LinearLayout>
+</LinearLayout>
